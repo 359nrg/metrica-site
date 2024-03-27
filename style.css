@@ -93,7 +93,7 @@ select {
 }
 
 .block__team {
-    background-image: url(/images/title-bg.jpg);
+    background-image: url(images/title-bg.jpg);
     max-width: 1150px;
     height: 500px;
     display: flex;
