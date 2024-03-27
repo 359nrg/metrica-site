@@ -1,0 +1,150 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+ul[class] {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* (╯ ° □ °) ╯(╯ ° □ °) ╯(╯ ° □ °) ╯ */
+
+.container {
+    box-sizing: border-box;
+    width: 1150px;
+    margin: 0 auto 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 26px 0 62px;
+}
+
+.menu a+a {
+    margin-left: 60px;
+}
+
+.menu-link {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -0.03em;
+    color: #101010;
+    text-decoration: none;
+}
+
+.menu-link:hover {
+    color: gray;
+    border-bottom: 1px solid gray;
+}
+
+.title {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+    color: #000;
+    max-width: 956px;
+    margin-bottom: 30px;
+}
+
+.block__team {
+    background-image: url(/images/title-bg.jpg);
+    max-width: 1150px;
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 150px;
+}
+
+.block__team p {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.03em;
+    color: #fff;
+    width: 470px;
+    padding: 0 0 40px 40px;
+    word-wrap: normal;
+}
+
+.services {
+    cursor: pointer;
+    background-color: #4F4F4F;
+    width: 255px;
+    height: 65px;
+    border-radius: 5px;
+    border: 0 solid #4F4F4F;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.services:hover {
+    background-color: #AD1818;
+}
+
+.block__about-us p {
+    padding-bottom: 30px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -0.03em;
+    color: #000;
+}
+
+.subtitle {
+    padding-bottom: 30px;
+    max-width: 1048px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    letter-spacing: -0.03em;
+    color: #000;
+}
