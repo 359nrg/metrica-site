@@ -61,7 +61,7 @@ a[class] {
 }
 
 section {
-    padding-bottom: 150px;
+    margin-bottom: 150px;
 }
 
 .header {
@@ -251,6 +251,7 @@ section {
 .project-promo {
     background-color: #121212;
     margin-bottom: 150px;
+    padding-top: 150px;
 }
 
 .block-project-promo {
