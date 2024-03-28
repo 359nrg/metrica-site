@@ -48,12 +48,20 @@ select {
     font: inherit;
 }
 
+a[class] {
+    text-decoration: none;
+}
+
 /* (╯ ° □ °) ╯(╯ ° □ °) ╯(╯ ° □ °) ╯ */
 
 .container {
     box-sizing: border-box;
     width: 1150px;
     margin: 0 auto 0;
+}
+
+section {
+    padding-bottom: 150px;
 }
 
 .header {
@@ -112,25 +120,7 @@ select {
     word-wrap: normal;
 }
 
-.services {
-    cursor: pointer;
-    background-color: #4F4F4F;
-    width: 255px;
-    height: 65px;
-    border-radius: 5px;
-    border: 0 solid #4F4F4F;
-    font-family: "Manrope", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    letter-spacing: -0.03em;
-    color: #fff;
-}
-
-.services:hover {
-    background-color: #AD1818;
-}
-
-.block__about-us p {
+.subtitle {
     padding-bottom: 30px;
     font-family: "Manrope", sans-serif;
     font-weight: 400;
@@ -139,7 +129,7 @@ select {
     color: #000;
 }
 
-.subtitle {
+.about-us-text {
     padding-bottom: 30px;
     max-width: 1048px;
     font-family: "Manrope", sans-serif;
@@ -147,4 +137,189 @@ select {
     font-size: 45px;
     letter-spacing: -0.03em;
     color: #000;
+}
+
+.button-services {
+    display: block;
+    background-color: #4F4F4F;
+    width: 255px;
+    height: 65px;
+    border-radius: 5px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 67px;
+    letter-spacing: -0.03em;
+    color: #fff;
+    text-align: center;
+}
+
+.button-services:hover {
+    background-color: #AD1818;
+    color: #fff;
+}
+
+.project-img {
+    margin-bottom: 15px;
+}
+
+.name {
+    margin-bottom: 15px;
+}
+
+.project-link {
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27.32px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    color: #AD1818;
+}
+.project-link:hover {
+    border-bottom: 1px solid #AD1818;
+}
+
+.block__project {
+    margin-bottom: 90px;
+}
+
+.button-projects {
+    display: block;
+    color: #AD1818;
+    text-decoration: none;
+    width: 1150px;
+    height: 153px;
+    background-color: #fff;
+    border: 1px solid #AD1818;
+    text-align: center;
+    line-height: 153px;
+    font-family: Manrope;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+}
+
+.button-projects:hover {
+    background-color: #AD1818;
+    color: #fff;
+}
+
+.services-subtitle {
+    padding: 151px 0 34px;
+    color: #fff;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.59px;
+    letter-spacing: -0.03em;
+
+}
+
+.services {
+    background-color: #121212;
+    margin-bottom: 0;
+}
+
+.service-name {
+    color: #fff;
+    font-family: Manrope;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40.98px;
+    letter-spacing: -0.03em;
+
+}
+
+.service-img {
+    margin-bottom: 15px;
+}
+
+.block-service {
+    margin-top: 60px;
+}
+
+
+.project-promo {
+    background-color: #121212;
+    margin-bottom: 150px;
+}
+
+.block-project-promo {
+    margin: 0 auto 0;
+    background: url(images/project-promo.jpg) no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    height: 717px;
+    max-width: 1400px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.project-promo-link {
+    margin: 0 125px 60px;
+    width: 443px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.phone-icon {
+    margin-bottom: 12px;
+}
+
+.contacts-text {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.footer {
+    background-color: #121212;
+    height: 220px;
+    display: block;
+    justify-content: center;
+}
+
+.footer-menu {
+    box-sizing: border-box;
+    display: block;
+    margin: auto;
+    padding: 60px 0 87px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 450px;
+}
+
+.official-name {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.03em;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-menu-link {
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.59px;
+    letter-spacing: -0.03em;
+    color: #fff;
+}
+
+.footer-menu-link:hover {
+    color: gray;
+}
+
+.contacts a:hover {
+    color: gray;
+    border-bottom: 1px solid gray;
 }
