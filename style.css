@@ -144,7 +144,7 @@ section {
 
 .button-services {
     display: block;
-    background-color: #4F4F4F;
+    background-color: #AD1818;
     width: 255px;
     height: 65px;
     border-radius: 5px;
@@ -159,7 +159,7 @@ section {
 
 .button-services:hover {
     background-color: #AD1818;
-    color: #fff;
+    color: #121212;
 }
 
 .project-img {
