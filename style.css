@@ -260,10 +260,10 @@ section {
 .block-project-promo {
     margin: 0 auto 0;
     background: url(images/project-promo.jpg) no-repeat;
-    background-size: contain;
-    background-position: bottom;
+    background-size: cover;
+    background-position: 50%;
     height: 717px;
-    max-width: 1400px;
+    max-width: 2800px;
     display: flex;
     align-items: flex-end;
 }
@@ -277,9 +277,18 @@ section {
     letter-spacing: -0.03em;
     color: #fff;
 }
-
-.phone-icon {
-    margin-bottom: 12px;
+.contacts h2{
+    position: relative;
+}
+.contacts h2::before {
+    content: '';
+    position: absolute;
+    top: -24px;
+    left: -4px;
+    background-image: url(images/phone.svg);
+    background-size: cover;
+    width: 24px;
+    height: 24px;
 }
 
 .contacts-text {
