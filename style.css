@@ -53,6 +53,9 @@ a[class] {
 }
 
 /* (╯ ° □ °) ╯(╯ ° □ °) ╯(╯ ° □ °) ╯ */
+html {
+    scroll-behavior: smooth;
+}
 
 .container {
     box-sizing: border-box;
