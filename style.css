@@ -261,9 +261,8 @@ section {
     margin: 0 auto 0;
     background: url(images/project-promo.jpg) no-repeat;
     background-size: cover;
-    background-position: 50%;
+    background-position: bottom;
     height: 717px;
-    max-width: 2800px;
     display: flex;
     align-items: flex-end;
 }
@@ -277,9 +276,11 @@ section {
     letter-spacing: -0.03em;
     color: #fff;
 }
-.contacts h2{
+
+.contacts h2 {
     position: relative;
 }
+
 .contacts h2::before {
     content: '';
     position: absolute;
@@ -291,34 +292,56 @@ section {
     height: 24px;
 }
 
-.contacts-text {
+.block-contacts {
+    display: flex;
+    flex-direction: column;
+    height: 217px;
+}
+
+.contacts-tel {
     font-family: "Manrope", sans-serif;
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
     letter-spacing: -0.03em;
-    color: #000;
+    color: #121212;
     margin-bottom: 30px;
 }
 
+.contacts-mail {
+    width: 412px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+    color: gray;
+    border-bottom: 2px solid gray;
+}
+.contacts-mail:hover{
+    color: #121212;
+    border-bottom: 2px solid #121212;
+    
+}
+
 .footer {
+    padding: 60px 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #121212;
     height: 220px;
-    display: block;
-    justify-content: center;
 }
 
 .footer-menu {
-    box-sizing: border-box;
-    display: block;
     margin: auto;
-    padding: 60px 0 87px;
     display: flex;
     justify-content: space-between;
     max-width: 450px;
 }
 
 .official-name {
+    display: block;
     font-family: "Manrope", sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -338,9 +361,4 @@ section {
 
 .footer-menu-link:hover {
     color: gray;
-}
-
-.contacts a:hover {
-    color: gray;
-    border-bottom: 1px solid gray;
 }
