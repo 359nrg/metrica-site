@@ -59,73 +59,71 @@ html {
 
 .container {
     box-sizing: border-box;
-    width: 1150px;
-    margin: 0 auto 0;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1180px;
+
 }
 
 section {
     margin-bottom: 150px;
 }
 
-.header {
+.header__wrapper {
+    margin: 32.82px 1px 73.76px 0.35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1161px;
-    margin: 32.82px 0 73.76px;
+
 }
 
-.menu a+a {
+.menu__link+.menu__link {
     margin-left: 60px;
 }
 
-.menu-link {
+.menu__link {
     font-family: "Manrope", sans-serif;
     font-weight: 400;
     font-size: 18px;
     letter-spacing: -0.03em;
     color: #101010;
-    text-decoration: none;
 }
 
-.menu-link:hover {
+.menu__link:hover {
     color: gray;
     border-bottom: 1px solid gray;
 }
 
-.title {
+.team__title {
+    margin-bottom: 30px;
     font-family: "Manrope", sans-serif;
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
     letter-spacing: -0.03em;
     color: #000;
-    max-width: 956px;
-    margin-bottom: 30px;
+    width: 956px;
 }
 
-.block__team {
+.team__block {
     background-image: url(images/title-bg.jpg);
-    max-width: 1150px;
     height: 500px;
     display: flex;
     align-items: flex-end;
-    margin-bottom: 150px;
 }
 
-.block__team p {
+.team__description {
+    margin: 0 0 40px 40px;
     font-family: "Manrope", sans-serif;
     font-weight: 400;
     font-size: 20px;
     letter-spacing: -0.03em;
     color: #fff;
     width: 470px;
-    padding: 0 0 40px 40px;
-    word-wrap: normal;
 }
 
 .subtitle {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     font-family: "Manrope", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -133,18 +131,17 @@ section {
     color: #000;
 }
 
-.about-us-text {
-    padding-bottom: 30px;
-    max-width: 1048px;
+.about-us__description {
+    margin: 0 0 30px 3px;
+    width: 1048px;
     font-family: "Manrope", sans-serif;
     font-weight: 400;
     font-size: 45px;
     letter-spacing: -0.03em;
     color: #000;
-    margin-left: 3px;
 }
 
-.button-services {
+.show-services-button {
     display: block;
     background-color: #AD1818;
     width: 255px;
@@ -159,16 +156,20 @@ section {
     text-align: center;
 }
 
-.button-services:hover {
+.show-services-button:hover {
     background-color: #AD1818;
     color: #121212;
 }
 
-.project-img {
+.project__block {
+    margin-bottom: 90px;
+}
+
+.project__img {
     margin-bottom: 15px;
 }
 
-.name {
+.project__name {
     margin-bottom: 15px;
     font-family: Manrope;
     font-size: 30px;
@@ -176,10 +177,9 @@ section {
     line-height: 40.98px;
     letter-spacing: -0.03em;
     color: #121212;
-
 }
 
-.project-link {
+.project__link {
     font-family: Manrope;
     font-size: 20px;
     font-weight: 400;
@@ -189,15 +189,11 @@ section {
     color: #AD1818;
 }
 
-.project-link:hover {
+.project__link:hover {
     border-bottom: 1px solid #AD1818;
 }
 
-.block__project {
-    margin-bottom: 90px;
-}
-
-.button-projects {
+.show-projects-button {
     display: block;
     color: #AD1818;
     text-decoration: none;
@@ -213,55 +209,41 @@ section {
     letter-spacing: -0.03em;
 }
 
-.button-projects:hover {
+.show-projects-button:hover {
     background-color: #AD1818;
     color: #fff;
 }
 
-.services-subtitle {
-    padding: 151px 0 34px;
-    margin-left: 2px;
-    color: #fff;
-    font-family: Manrope;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24.59px;
-    letter-spacing: -0.03em;
-    
-
-}
-
 .services {
     background-color: #121212;
-    margin-bottom: 0;
+    padding: 151px 0 150px;
+    margin-bottom: 0px;
 }
 
-.service-name {
+.service__block+.service__block {
+    margin-top: 60px;
+}
+
+.service__img {
+    margin-bottom: 15px;
+}
+
+.dark-theme__subtitle {
+    margin-left: 2px;
+    color: #fff;
+}
+
+.service__name {
+    margin-left: 3px;
     color: #fff;
     font-family: Manrope;
     font-size: 30px;
     font-weight: 400;
     line-height: 40.98px;
     letter-spacing: -0.03em;
-margin-left: 3px;
 }
 
-.service-img {
-    margin-bottom: 15px;
-}
-
-.block-service {
-    margin-top: 60px;
-}
-
-
-.project-promo {
-    background-color: #121212;
-    margin-bottom: 150px;
-    padding-top: 150px;
-}
-
-.block-project-promo {
+.promo-project__block {
     margin: 0 auto 0;
     background: url(images/project-promo.jpg) no-repeat;
     background-size: cover;
@@ -271,8 +253,8 @@ margin-left: 3px;
     align-items: flex-end;
 }
 
-.project-promo-link {
-    margin: 0 125px 60px;
+.promo-project__link {
+    margin: 0 0 60px 125px;
     width: 443px;
     font-family: "Manrope", sans-serif;
     font-weight: 400;
@@ -281,11 +263,11 @@ margin-left: 3px;
     color: #fff;
 }
 
-.contacts h2 {
+.contacts .subtitle {
     position: relative;
 }
 
-.contacts h2::before {
+.contacts .subtitle::before {
     content: '';
     position: absolute;
     top: -24px;
@@ -296,13 +278,13 @@ margin-left: 3px;
     height: 24px;
 }
 
-.block-contacts {
+.contacts__block {
     display: flex;
     flex-direction: column;
     height: 217px;
 }
 
-.contacts-tel {
+.contacts__tel {
     font-family: "Manrope", sans-serif;
     font-weight: 400;
     font-size: 60px;
@@ -312,7 +294,7 @@ margin-left: 3px;
     margin-bottom: 30px;
 }
 
-.contacts-mail {
+.contacts__mail {
     width: 412px;
     font-family: "Manrope", sans-serif;
     font-weight: 400;
@@ -322,10 +304,11 @@ margin-left: 3px;
     color: gray;
     border-bottom: 2px solid gray;
 }
-.contacts-mail:hover{
+
+.contacts__mail:hover {
     color: #121212;
     border-bottom: 2px solid #121212;
-    
+
 }
 
 .footer {
@@ -337,7 +320,7 @@ margin-left: 3px;
     height: 220px;
 }
 
-.footer-menu {
+.footer__menu {
     margin: auto;
     display: flex;
     justify-content: space-between;
