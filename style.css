@@ -28,7 +28,8 @@ figure,
 figcaption,
 blockquote,
 dl,
-dd {
+dd,
+pre {
     margin: 0;
 }
 
@@ -61,7 +62,7 @@ html {
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0 15px;
-    width: 1180px;
+    max-width: 1180px;
 
 }
 
@@ -131,7 +132,7 @@ section {
     color: #000;
 }
 
-.about-us__description {
+.about__description {
     margin: 0 0 30px 3px;
     width: 1048px;
     font-family: "Manrope", sans-serif;
@@ -141,7 +142,7 @@ section {
     color: #000;
 }
 
-.show-services-button {
+.about__btn {
     display: block;
     background-color: #AD1818;
     width: 255px;
@@ -156,7 +157,7 @@ section {
     text-align: center;
 }
 
-.show-services-button:hover {
+.about__btn:hover {
     background-color: #AD1818;
     color: #121212;
 }
@@ -193,7 +194,7 @@ section {
     border-bottom: 1px solid #AD1818;
 }
 
-.show-projects-button {
+.projects__btn {
     display: block;
     color: #AD1818;
     text-decoration: none;
@@ -209,7 +210,7 @@ section {
     letter-spacing: -0.03em;
 }
 
-.show-projects-button:hover {
+.projects__btn:hover {
     background-color: #AD1818;
     color: #fff;
 }
@@ -228,7 +229,7 @@ section {
     margin-bottom: 15px;
 }
 
-.subtitle_dark-theme {
+.subtitle-dark {
     margin-left: 2px;
     color: #fff;
 }
@@ -243,24 +244,32 @@ section {
     letter-spacing: -0.03em;
 }
 
-.promo-project__block {
-    margin: 0 auto 0;
+.promo {
     background: url(images/project-promo.jpg) no-repeat;
     background-size: cover;
     background-position: bottom;
     height: 717px;
+    margin-bottom: 186px;
+}
+
+.promo__text-wrapper {
     display: flex;
     align-items: flex-end;
 }
 
-.promo-project__link {
-    margin: 0 0 60px 125px;
+.promo__text {
+    margin-top: 575px;
     width: 443px;
     font-family: "Manrope", sans-serif;
     font-weight: 400;
     font-size: 30px;
     letter-spacing: -0.03em;
     color: #fff;
+}
+
+.contacts__block {
+    display: flex;
+    flex-direction: column;
 }
 
 .contacts .subtitle {
@@ -270,19 +279,14 @@ section {
 .contacts .subtitle::before {
     content: '';
     position: absolute;
-    top: -24px;
-    left: -4px;
+    top: -36px;
     background-image: url(images/phone.svg);
-    background-size: cover;
+    background-size: contain;
     width: 24px;
     height: 24px;
 }
 
-.contacts__block {
-    display: flex;
-    flex-direction: column;
-    height: 217px;
-}
+
 
 .contacts__tel {
     font-family: "Manrope", sans-serif;
@@ -295,7 +299,6 @@ section {
 }
 
 .contacts__mail {
-    width: 412px;
     font-family: "Manrope", sans-serif;
     font-weight: 400;
     font-size: 60px;
@@ -319,19 +322,19 @@ section {
     height: 220px;
 }
 
-.menu_dark-theme {
+.menu-dark {
     margin: auto;
     display: flex;
     justify-content: space-between;
     width: 450px;
 }
 
-.menu_dark-theme .menu__link {
+.menu-dark .menu__link {
     margin-left: 0;
     color: #fff;
 }
 
-.menu_dark-theme .menu__link:hover {
+.menu-dark .menu__link:hover {
     border-bottom: none;
     color: gray;
 }

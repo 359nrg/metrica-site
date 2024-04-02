@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metrica</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +19,7 @@
                     <img class="logo-image" src="images/metrica-logo.svg" alt="Логотип">
                 </a>
                 <nav class="menu">
-                    <a class="menu__link" href="#id-about-us">О НАС</a>
+                    <a class="menu__link" href="#id-about">О НАС</a>
                     <a class="menu__link" href="#id-projects">ПРОЕКТЫ</a>
                     <a class="menu__link" href="#id-services">УСЛУГИ</a>
                     <a class="menu__link" href="#id-contacts">КОНТАКТЫ</a>
@@ -35,65 +36,69 @@
             </div>
         </div>
     </section>
-    <section id="id-about-us" class="about-us">
+    <section id="id-about" class="about">
         <div class="container">
             <h2 class="subtitle">О НАС</h2>
-            <div class="about-us__block">
-                <p class="about-us__description">Студия основана в 2011 году. Полностью отдаемся проектированию и
-                    реализации интерьеров. К нам обращаются за уютом, индивидуальными решениями и практичностью. Находим
-                    конструктивные решения для каждого интерьера, вплоть до каждой детали — нацелены на результат.</p>
-                <a href="#" class="show-services-button">
-                    Посмотреть услуги
-                </a>
-            </div>
+            <p class="about__description">Студия основана в 2011 году. Полностью отдаемся проектированию и
+                реализации интерьеров. К нам обращаются за уютом, индивидуальными решениями и практичностью. Находим
+                конструктивные решения для каждого интерьера, вплоть до каждой детали — нацелены на результат.</p>
+            <a href="#" class="about__btn">
+                Посмотреть услуги
+            </a>
     </section>
     <section id="id-projects" class="projects">
         <div class="container">
             <h2 class="subtitle">
                 ПРОЕКТЫ
             </h2>
-            <div class="project__block">
-                <img src="images/project1.jpg" alt="Проект-1" class="project__img">
-                <p class="project__name">ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023</p>
-                <a href="#" class="project__link">Подробнее →</a>
-            </div>
-            <div class="project__block">
-                <img src="images/project2.jpg" alt="Проект-2" class="project__img">
-                <p class="project__name">ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023</p>
-                <a href="#" class="project__link">Подробнее →</a>
-            </div>
-            <div class="project__block">
-                <img src="images/project3.jpg" alt="Проект-3" class="project__img">
-                <p class="project__name">ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022</p>
-                <a href="#" class="project__link">Подробнее →</a>
-            </div>
-            <a href="#" class="show-projects-button">Смотреть все проекты</a>
+            <ul class="project__list">
+                <li class="project__block">
+                    <img src="images/project1.jpg" alt="Проект-1" class="project__img">
+                    <p class="project__name">ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023</p>
+                    <a href="#" class="project__link">Подробнее →</a>
+                </li>
+                <li class="project__block">
+                    <img src="images/project2.jpg" alt="Проект-2" class="project__img">
+                    <p class="project__name">ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023</p>
+                    <a href="#" class="project__link">Подробнее →</a>
+                </li>
+                <li class="project__block">
+                    <img src="images/project3.jpg" alt="Проект-3" class="project__img">
+                    <p class="project__name">ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022</p>
+                    <a href="#" class="project__link">Подробнее →</a>
+                </li>
+            </ul>
+            <a href="#" class="projects__btn">Смотреть все проекты</a>
         </div>
     </section>
     <section id="id-services" class="services">
         <div class="container">
-            <h2 class="subtitle subtitle_dark-theme">УСЛУГИ</h2>
-            <div class="service__block">
-                <img src="images/service1.jpg" alt="Услуга-1" class="service__img">
-                <a href="#" class="service__name">Планировочное решение — от 2500₽/м²</a>
-            </div>
-            <div class="service__block">
-                <img src="images/service2.jpg" alt="Услуга-2" class="service__img">
-                <a href="#" class="service__name">Дизайн-проект — от 3000₽/м²</a>
-            </div>
-            <div class="service__block">
-                <img src="images/service3.jpg" alt="Услуга-3" class="service__img">
-                <a href="#" class="service__name">Авторский надзор — от 30 000₽ в месяц</a>
-            </div>
-            <div class="service__block">
-                <img src="images/service4.jpg" alt="Услуга-4" class="service__img">
-                <a href="#" class="service__name">Комплектация — 5% от стоимости спецификации</a>
-            </div>
+            <h2 class="subtitle subtitle-dark">УСЛУГИ</h2>
+            <ul class="service__list">
+                <li class="service__block">
+                    <img src="images/service1.jpg" alt="Услуга-1" class="service__img">
+                    <a href="#" class="service__name">Планировочное решение — от 2500₽/м²</a>
+                </li>
+                <li class="service__block">
+                    <img src="images/service2.jpg" alt="Услуга-2" class="service__img">
+                    <a href="#" class="service__name">Дизайн-проект — от 3000₽/м²</a>
+                </li>
+                <li class="service__block">
+                    <img src="images/service3.jpg" alt="Услуга-3" class="service__img">
+                    <a href="#" class="service__name">Авторский надзор — от 30 000₽ в месяц</a>
+                </li>
+                <li class="service__block">
+                    <img src="images/service4.jpg" alt="Услуга-4" class="service__img">
+                    <a href="#" class="service__name">Комплектация — 5% от стоимости спецификации</a>
+                </li>
+            </ul>
         </div>
     </section>
-    <section class="promo-project">
-        <div class="promo-project__block">
-            <a href="#" class="promo-project__link">Проект Двухкомнатной квартиры в ЖК Лесной Пейзаж</a>
+    <section class="promo">
+        <div class="container">
+            <div class="promo__text-wrapper">
+                <p class="promo__text">Проект Двухкомнатной квартиры в ЖК Лесной Пейзаж</p>
+            </div>
         </div>
     </section>
     <section id="id-contacts" class="contacts">
@@ -101,14 +106,16 @@
             <div class="contacts__block">
                 <h2 class="subtitle">КОНТАКТЫ</h2>
                 <a href="tel:+79358954535" class="contacts__tel">+7 935 895-45-35</a>
-                <a href="mailto:hello@mail.com" class="contacts__mail">hello@mail.com</a>
+                <div class="contacts__mail-wrapper">
+                    <a href="mailto:hello@mail.com" class="contacts__mail">hello@mail.com</a>
+                </div>
             </div>
         </div>
     </section>
     <div class="footer">
         <div class="footer__wrapper">
-            <nav class="menu menu_dark-theme">
-                <a class="menu__link" href="#id-about-us">О НАС</a>
+            <nav class="menu menu-dark">
+                <a class="menu__link" href="#id-about">О НАС</a>
                 <a class="menu__link" href="#id-projects">ПРОЕКТЫ</a>
                 <a class="menu__link" href="#id-services">УСЛУГИ</a>
                 <a class="menu__link" href="#id-contacts">КОНТАКТЫ</a>
