@@ -298,19 +298,22 @@ section {
     margin-bottom: 30px;
 }
 
-.contacts__mail {
+.contacts__block a:last-child {
+    text-decoration-line: underline;
+    text-underline-offset: 12px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #121212;
     font-family: "Manrope", sans-serif;
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
     letter-spacing: -0.03em;
-    color: gray;
-    border-bottom: 2px solid gray;
+    color: #121212;
+    opacity: 0.5;
 }
 
-.contacts__mail:hover {
-    color: #121212;
-    border-bottom: 2px solid #121212;
+.contacts__block a:hover {
+    opacity: 1;
 }
 
 .footer {
