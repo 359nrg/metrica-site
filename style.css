@@ -70,16 +70,19 @@ section {
     margin-bottom: 150px;
 }
 
-.header__wrapper {
+.header {
     margin: 32.82px 1px 73.76px 0.35px;
+}
+
+.header__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
 
-.menu__link+.menu__link {
-    margin-left: 60px;
+.menu__list {
+    display: flex;
 }
 
 .menu__link {
@@ -88,6 +91,10 @@ section {
     font-size: 18px;
     letter-spacing: -0.03em;
     color: #101010;
+}
+
+.menu__item+.menu__item {
+    margin-left: 60px;
 }
 
 .menu__link:hover {
@@ -108,7 +115,10 @@ section {
 
 .team__block {
     background-image: url(images/title-bg.jpg);
+    width: 100%;
     height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
 }
@@ -120,7 +130,7 @@ section {
     font-size: 20px;
     letter-spacing: -0.03em;
     color: #fff;
-    width: 470px;
+    width: 430px;
 }
 
 .subtitle {
@@ -195,15 +205,14 @@ section {
 }
 
 .projects__btn {
+    padding: 56px 10px;
+    width: 100%;
     display: block;
     color: #AD1818;
     text-decoration: none;
-    width: 1150px;
-    height: 153px;
     background-color: #fff;
     border: 1px solid #AD1818;
     text-align: center;
-    line-height: 153px;
     font-family: Manrope;
     font-size: 30px;
     font-weight: 400;
@@ -249,7 +258,8 @@ section {
     background-size: cover;
     background-position: bottom;
     height: 717px;
-    margin-bottom: 186px;
+    margin: 0;
+
 }
 
 .promo__text-wrapper {
@@ -265,6 +275,10 @@ section {
     font-size: 30px;
     letter-spacing: -0.03em;
     color: #fff;
+}
+
+.contacts {
+    margin: 186px 0 162px;
 }
 
 .contacts__block {
@@ -285,8 +299,6 @@ section {
     width: 24px;
     height: 24px;
 }
-
-
 
 .contacts__tel {
     font-family: "Manrope", sans-serif;
@@ -316,28 +328,34 @@ section {
     opacity: 1;
 }
 
-.footer {
+footer {
     padding: 60px 0 30px;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    justify-content: space-between;
     background-color: #121212;
-    height: 220px;
 }
 
-.menu-dark {
-    margin: auto;
+.footer__wrapper {
+    margin-bottom: 87px;
+}
+
+.menu__list-dark {
     display: flex;
     justify-content: space-between;
     width: 450px;
 }
 
-.menu-dark .menu__link {
+.menu__list-dark .menu__item {
     margin-left: 0;
     color: #fff;
 }
 
-.menu-dark .menu__link:hover {
+.menu__list-dark .menu__link {
+    color: #fff;
+}
+
+.menu__list-dark .menu__link:hover {
     border-bottom: none;
     color: gray;
 }
